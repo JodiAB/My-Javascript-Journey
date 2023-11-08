@@ -56,7 +56,7 @@ let obj;
 console.log(obj);
 
 //functions
-const amountInRand = 1;
+const amountInRand = 1000;
 
 const exchangeRates = {
   USD: 18.48, 
@@ -64,13 +64,13 @@ const exchangeRates = {
   GBP: 22.66, 
 };
 
-const amountInUSD = amountInRand * exchangeRates.USD;
-const amountInEUR = amountInRand * exchangeRates.EUR;
-const amountInGBP = amountInRand * exchangeRates.GBP;
+const amountInUSD = amountInRand / exchangeRates.USD;
+const amountInEUR = amountInRand / exchangeRates.EUR;
+const amountInGBP = amountInRand / exchangeRates.GBP;
 
-console.log(`$1 is equal to R${amountInUSD} `);
-console.log(`€1 is equal to R${amountInEUR} `);
-console.log(`£1 is equal to R${amountInGBP} `);
+console.log(`R1000 is equal to $${amountInUSD} `);
+console.log(`R1000 is equal to €${amountInEUR} `);
+console.log(`R1000 is equal to £${amountInGBP} `);
 
 
 function CAWV(amount) {
@@ -118,10 +118,10 @@ function isOddOrEven(num1) {
   }
   
   
-  const num1 = 167; 
-  const num2 = 178;
-  isOddOrEven(num1);
-  isOddOrEven(num2);
+  const nam1 = 167; 
+  const nam2 = 178;
+  isOddOrEven(nam1);
+  isOddOrEven(nam2);
 
 
   function sortNumbersDescending(Number1, Number2, Number3) {
